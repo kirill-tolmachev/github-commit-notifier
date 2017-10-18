@@ -1,8 +1,0 @@
-New push on kirill-tolmachev/github-commit-notifier
-
-kirill-tolmachev pushed 1 commit(s):
-1) [18.10.2017 7:53 Кирилл Толмачев (kirill-tolmachev)] added: 114; removed: 77; modified: 9.
-
-Browse changes here: https://github.com/kirill-tolmachev/github-commit-notifier/compare/876d611a60d1...4771ed406284
-
-
