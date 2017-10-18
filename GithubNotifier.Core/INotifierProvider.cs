@@ -1,20 +1,26 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Autofac;
 
 namespace GithubNotifier.Core
 {
     public interface INotifierProvider
     {
-        IList<INotifier> Provide();
+        IEnumerable<INotifier> Provide();
     }
 
     public class DefaultNotifierProvider : INotifierProvider
     {
-        public IList<INotifier> Provide()
+        private readonly IEnumerable<INotifier> _notifiers;
+
+        public DefaultNotifierProvider(IEnumerable<INotifier> notifiers)
         {
-            return new List<INotifier>()
-            {
-                new EmailNotifier()
-            };
+            _notifiers = notifiers;
+        }
+
+        public IEnumerable<INotifier> Provide()
+        {
+            return _notifiers;
         }
     }
 }

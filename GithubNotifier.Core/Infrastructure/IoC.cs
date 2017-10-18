@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using GithubNotifier.Core.Notifiers;
 
 namespace GithubNotifier.Core.Infrastructure
 {
@@ -6,7 +7,7 @@ namespace GithubNotifier.Core.Infrastructure
     {
         protected override void Load(ContainerBuilder builder)
         {
-            
+            builder.RegisterType<TextFileLogNotifier>().WithParameter("path", "D:\\Projects\\githubcommitnotifier\\log.txt").As<INotifier>();
         }
     }
 }

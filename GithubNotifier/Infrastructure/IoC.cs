@@ -40,7 +40,7 @@ namespace GithubNotifier.Infrastructure
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<NotificationWebHookHandler>().AsSelf().InstancePerDependency();
+            builder.RegisterType<NotificationWebHookHandler>().As<IWebHookHandler>().InstancePerDependency();
             builder.RegisterType<DefaultNotifierProvider>().As<INotifierProvider>().SingleInstance();
             builder.Register(ctx => CommonServices.GetSettings()).As<SettingsDictionary>();
             builder.RegisterType<Logger>().As<ILogger>().SingleInstance();

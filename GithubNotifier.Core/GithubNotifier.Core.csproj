@@ -66,12 +66,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="EmailNotifier.cs" />
+    <Compile Include="Formatters\IFormatter.cs" />
+    <Compile Include="Formatters\ShortMessageFormatter.cs" />
+    <Compile Include="Notifiers\EmailNotifier.cs" />
     <Compile Include="GithubPayload.cs" />
     <Compile Include="Infrastructure\IoC.cs" />
     <Compile Include="INotifier.cs" />
     <Compile Include="INotifierProvider.cs" />
+    <Compile Include="Notifiers\TextFileLogNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
