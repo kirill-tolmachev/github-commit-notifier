@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubNotifier", "GithubNotifier\GithubNotifier.csproj", "{A3ECD5D0-9CCE-4A12-8431-4B4CA8D8410C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubNotifier.Core", "GithubNotifier.Core\GithubNotifier.Core.csproj", "{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3ECD5D0-9CCE-4A12-8431-4B4CA8D8410C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3ECD5D0-9CCE-4A12-8431-4B4CA8D8410C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3ECD5D0-9CCE-4A12-8431-4B4CA8D8410C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3ECD5D0-9CCE-4A12-8431-4B4CA8D8410C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1003BBDC-B52C-45F9-91B3-C8A42D1B6E5A}
+	EndGlobalSection
+EndGlobal
