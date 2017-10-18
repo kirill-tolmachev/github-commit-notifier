@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubNotifier", "GithubNot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubNotifier.Core", "GithubNotifier.Core\GithubNotifier.Core.csproj", "{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubNotifier.Telegram", "GithubNotifier.Telegram\GithubNotifier.Telegram.csproj", "{3667FDB0-9F1B-4266-8646-15CD8110D1DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C912D7A8-EE63-4CB4-967A-3FB19CA001F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3667FDB0-9F1B-4266-8646-15CD8110D1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3667FDB0-9F1B-4266-8646-15CD8110D1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3667FDB0-9F1B-4266-8646-15CD8110D1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3667FDB0-9F1B-4266-8646-15CD8110D1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

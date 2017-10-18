@@ -17,12 +17,12 @@ namespace GithubNotifier.Core.Formatters
             int commitIndex = 1;
             foreach (var commit in payload.Commits)
             {
-                sb.AppendLine(
-                    $"{commitIndex++}) {commit.Author?.Name} ({commit.Author?.Username}) " +
-                    $"added: {commit.AddedFiles.Count}; removed: {commit.RemovedFiles.Count}; modified: {commit.ModifiedFiles.Count}.");
+                sb.AppendLine($"{commitIndex++}) [{commit.Timestamp.ToString("g")} {commit.Author?.Name} ({commit.Author?.Username})] ");
+                sb.AppendLine($"added: {commit.AddedFiles.Count}; removed: {commit.RemovedFiles.Count}; modified: {commit.ModifiedFiles.Count}.");
             }
             sb.AppendLine();
-            sb.AppendLine($"Browse changes here: {payload.DiffUrl}");
+            sb.AppendLine($"Browse changes here:");
+            sb.AppendLine($"{payload.DiffUrl}");
             return sb.ToString();
         }
 

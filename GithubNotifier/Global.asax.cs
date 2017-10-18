@@ -45,6 +45,7 @@ namespace GithubNotifier
 
             builder.RegisterModule<GithubNotifier.Infrastructure.IoC>();
             builder.RegisterModule<GithubNotifier.Core.Infrastructure.IoC>();
+            builder.RegisterModule<GithubNotifier.Telegram.Infrastructure.IoC>();
 
             //// OPTIONAL: Enable property injection in view pages.
             //builder.RegisterSource(new ViewRegistrationSource());

@@ -40,6 +40,9 @@ namespace GithubNotifier.Core
 
         [JsonProperty("url")]
         public string Url { get; set; }
+
+        [JsonProperty("timestamp")]
+        public DateTime Timestamp { get; set; }
     }
 
     public class Repository

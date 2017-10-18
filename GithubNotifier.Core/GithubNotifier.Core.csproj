@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="Formatters\IFormatter.cs" />
     <Compile Include="Formatters\ShortMessageFormatter.cs" />
-    <Compile Include="Notifiers\EmailNotifier.cs" />
     <Compile Include="GithubPayload.cs" />
     <Compile Include="Infrastructure\IoC.cs" />
     <Compile Include="INotifier.cs" />
