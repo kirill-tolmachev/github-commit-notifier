@@ -25,6 +25,8 @@ namespace GithubNotifier.Telegram
             do
             {
                 updates = await client.GetUpdatesAsync(offset, count, 0, null, token);
+                if (updates.Length == 0)
+                    break;
                 offset = updates.Select(u => u.Id).Max();
                 result.AddRange(updates);
 
